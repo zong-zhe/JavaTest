@@ -26,3 +26,4 @@ jobs:
             -DskipRemoteStaging=true \
             -DserverId=nexus \
             -DnexusUrl=http://localhost:8081/
+            -DaltDeploymentRepository=nexus::default::http://localhost:8081/repository/maven-releases/ 
