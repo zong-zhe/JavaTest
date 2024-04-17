@@ -24,6 +24,7 @@ jobs:
             -DskipTests=true \
             -DaltStagingDirectory=local-staging \
             -DskipRemoteStaging=true \
+            -s ./settings.xml
       - name: Upload local staging directory
         uses: actions/upload-artifact@v3
         with:

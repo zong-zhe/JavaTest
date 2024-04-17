@@ -2,16 +2,10 @@
   xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd'>
   <servers>
     <server>
-      <id>nexus</id>
+      <id>my-nexus-server</id>
       <username>test</username>
       <password>1234</password>
     </server>
+    <!-- other servers -->
   </servers>
-  <mirrors>
-    <mirror>
-      <id>nexus</id>
-      <url>http://localhost:8081/repository/maven-public/</url>
-      <mirrorOf>*</mirrorOf>
-    </mirror>
-  </mirrors>
 </settings>
