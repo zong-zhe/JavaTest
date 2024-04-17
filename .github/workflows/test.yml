@@ -16,6 +16,13 @@ jobs:
       - name: Setup Nexus Repository
         run: ./setup-nexus.sh
 
-      - name: Build and Deploy Maven Project
-        run: mvn clean deploy -DaltDeploymentRepository=nexus::default::http://localhost:8081/repository/maven-releases/ -s ./settings.xml
+      - name: Local staging
         working-directory: ./my-app
+        shell: bash
+        run: |
+          mvn package verify org.sonatype.plugins:nexus-staging-maven-plugin:deploy \
+            -DskipTests=true \
+            -DaltStagingDirectory=local-staging \
+            -DskipRemoteStaging=true \
+            -DserverId=nexus \
+            -DnexusUrl=http://localhost:8081/
