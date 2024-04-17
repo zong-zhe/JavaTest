@@ -15,3 +15,6 @@ jobs:
 
       - name: Setup Nexus Repository
         run: ./setup-nexus.sh
+
+      - name: Build and Deploy Maven Project
+        run: mvn clean deploy -s ./settings.xml
