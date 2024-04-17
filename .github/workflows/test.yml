@@ -18,3 +18,4 @@ jobs:
 
       - name: Build and Deploy Maven Project
         run: mvn clean deploy -s ./settings.xml
+        working-directory: ./my-app
