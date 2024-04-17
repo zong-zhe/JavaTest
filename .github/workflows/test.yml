@@ -20,10 +20,7 @@ jobs:
         working-directory: ./my-app
         shell: bash
         run: |
-          mvn package verify org.sonatype.plugins:nexus-staging-maven-plugin:deploy \
+          mvn clean package verify org.sonatype.plugins:nexus-staging-maven-plugin:deploy \
             -DskipTests=true \
             -DaltStagingDirectory=local-staging \
             -DskipRemoteStaging=true \
-            -DserverId=nexus \
-            -DnexusUrl=http://localhost:8081/
-            -DaltDeploymentRepository=nexus::default::http://localhost:8081/repository/maven-releases/ 
