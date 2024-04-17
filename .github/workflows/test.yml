@@ -17,5 +17,5 @@ jobs:
         run: ./setup-nexus.sh
 
       - name: Build and Deploy Maven Project
-        run: mvn clean deploy -s ./settings.xml
+        run: mvn clean deploy -DaltDeploymentRepository=nexus::default::http://localhost:8081/repository/maven-releases/ -s ./settings.xml
         working-directory: ./my-app
