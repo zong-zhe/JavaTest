@@ -1,4 +1,1 @@
-com/mycompany/app/my-app/1.0-SNAPSHOT/my-app-1.0-SNAPSHOT.jar=com.mycompany.app:my-app:1.0-SNAPSHOT:n/a:jar:jar:my-app-1.0-SNAPSHOT.pom:n/a:nexus:http://localhost:8081/repository/maven-releases/
-com/mycompany/app/my-app/1.0-SNAPSHOT/my-app-1.0-SNAPSHOT.jar=com.mycompany.app:my-app:1.0-SNAPSHOT:n/a:jar:jar:my-app-1.0-SNAPSHOT.pom:n/a:nexus:http://localhost:8081/repository/maven-releases/
-com/mycompany/app/my-app/1.0-SNAPSHOT/my-app-1.0-SNAPSHOT.jar=com.mycompany.app:my-app:1.0-SNAPSHOT:n/a:jar:jar:my-app-1.0-SNAPSHOT.pom:n/a:nexus:http://localhost:8081/repository/maven-releases/
-com/mycompany/app/my-app/1.0-SNAPSHOT/my-app-1.0-SNAPSHOT.jar=com.mycompany.app:my-app:1.0-SNAPSHOT:n/a:jar:jar:my-app-1.0-SNAPSHOT.pom:n/a:nexus:http://localhost:8081/repository/maven-releases/
+com/mycompany/app/my-app/1.0-SNAPSHOT/my-app-1.0-SNAPSHOT.jar=com.mycompany.app:my-app:1.0-SNAPSHOT:n/a:jar:jar:my-app-1.0-SNAPSHOT.pom:n/a:nexus:file://./local-staging

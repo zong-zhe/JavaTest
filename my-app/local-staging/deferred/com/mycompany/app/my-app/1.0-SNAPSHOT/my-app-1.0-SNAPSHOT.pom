@@ -34,7 +34,7 @@
   <distributionManagement>
     <repository>
       <id>nexus</id>
-      <url>http://localhost:8081/repository/maven-releases/</url>
+      <url>file://./local-staging</url>
     </repository>
   </distributionManagement>
 </project>

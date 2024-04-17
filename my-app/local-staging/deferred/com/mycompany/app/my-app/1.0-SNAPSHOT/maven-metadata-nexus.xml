@@ -3,7 +3,7 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
   <versioning>
-    <lastUpdated>20240417100006</lastUpdated>
+    <lastUpdated>20240417101615</lastUpdated>
     <snapshot>
       <localCopy>true</localCopy>
     </snapshot>
@@ -11,12 +11,12 @@
       <snapshotVersion>
         <extension>jar</extension>
         <value>1.0-SNAPSHOT</value>
-        <updated>20240417100006</updated>
+        <updated>20240417101615</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
         <value>1.0-SNAPSHOT</value>
-        <updated>20240417100006</updated>
+        <updated>20240417101615</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
