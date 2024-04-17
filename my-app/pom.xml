@@ -20,7 +20,7 @@
           </execution>
         </executions>
         <configuration>
-          <nexusUrl>http://nexus:8081</nexusUrl>
+          <nexusUrl>http://localhost:8081</nexusUrl>
           <serverId>my-nexus-server</serverId>
           <!-- other configuration -->
         </configuration>
