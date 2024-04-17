@@ -24,3 +24,9 @@ jobs:
             -DskipTests=true \
             -DaltStagingDirectory=local-staging \
             -DskipRemoteStaging=true \
+      - name: Upload local staging directory
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ matrix.classifier }}-local-staging
+          path: my-app/local-staging
+          if-no-files-found: error
