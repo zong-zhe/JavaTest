@@ -18,6 +18,8 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+      working-directory: my-app
+      
     - name: Publish to GitHub Packages
       run: mvn deploy -s settings.xml
       env:
