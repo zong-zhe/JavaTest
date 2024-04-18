@@ -31,3 +31,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       working-directory: my-app
+
+     - name: Upload local staging directory
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ matrix.classifier }}-local-staging
+          path: my-app/local-staging
+          if-no-files-found: error
