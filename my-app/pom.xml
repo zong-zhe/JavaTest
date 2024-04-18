@@ -4,7 +4,7 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
   <packaging>jar</packaging>
-  <version>1.10</version>
+  <version>1.19</version>
   <name>my-app</name>
   <url>http://maven.apache.org</url>
 
@@ -47,13 +47,15 @@
             </goals>
             <configuration>
               <artifacts>
-                <artifact>
-                  <file>lib/linux/libSdk</file>
+                <!-- <artifact>
+                  <file>lib/linux/libsdk.jar</file>
                   <classifier>linux</classifier>
-                </artifact>
+                  <type>jar</type>
+                </artifact> -->
                 <artifact>
-                  <file>lib/win/Sdk</file>
+                  <file>lib/win/sdk.jar</file>
                   <classifier>win</classifier>
+                  <type>jar</type>
                 </artifact>
               </artifacts>
             </configuration>
