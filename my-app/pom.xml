@@ -50,7 +50,7 @@
     <repository>
       <id>github</id>
       <name>GitHub Packages</name>
-      <url>https://maven.pkg.github.com/zongz1024/JavaTest</url>
+      <url>https://maven.pkg.github.com/zong-zhe/JavaTest</url>
     </repository>
   </distributionManagement>
 </project>
