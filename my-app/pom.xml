@@ -20,7 +20,7 @@
           </execution>
         </executions>
         <configuration>
-          <nexusUrl>https://maven.pkg.github.com/zong-zhe/JavaTest</nexusUrl>
+          <nexusUrl>https://maven.pkg.github.com</nexusUrl>
           <serverId>github</serverId>
           <!-- other configuration -->
         </configuration>
