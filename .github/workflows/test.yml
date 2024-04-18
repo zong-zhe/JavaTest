@@ -21,7 +21,12 @@ jobs:
       working-directory: my-app
 
     - name: Publish to GitHub Packages
-      run: mvn deploy -s settings.xml
+      run: |
+          mvn package verify org.sonatype.plugins:nexus-staging-maven-plugin:deploy \
+            -DskipTests=true \
+            -DaltStagingDirectory=local-staging \
+            -DskipRemoteStaging=true \
+            -s settings.xml
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       working-directory: my-app
