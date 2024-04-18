@@ -4,7 +4,7 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
   <packaging>jar</packaging>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <name>my-app</name>
   <url>http://maven.apache.org</url>
 
@@ -20,7 +20,7 @@
           </execution>
         </executions>
         <configuration>
-          <nexusUrl>http://localhost:8081</nexusUrl>
+          <nexusUrl>http://localhost:8082</nexusUrl>
           <serverId>my-nexus-server</serverId>
           <!-- other configuration -->
         </configuration>
@@ -48,8 +48,9 @@
 
   <distributionManagement>
     <repository>
-      <id>nexus</id>
-      <url>file://./local-staging</url>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/zongz1024/JavaTest</url>
     </repository>
   </distributionManagement>
 </project>

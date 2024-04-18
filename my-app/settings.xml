@@ -2,10 +2,9 @@
   xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd'>
   <servers>
     <server>
-      <id>my-nexus-server</id>
-      <username>test</username>
-      <password>1234</password>
+      <id>github</id>
+      <username>YOUR_GITHUB_USERNAME</username>
+      <password>${env.GITHUB_TOKEN}</password>
     </server>
-    <!-- other servers -->
   </servers>
 </settings>
