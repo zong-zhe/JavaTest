@@ -15,18 +15,10 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
-      working-directory: my-app
 
     - name: Publish to GitHub Packages
-      run: |
-        mvn -Papache-release package verify deploy \
-        -DskipTests=true \
-        -DaltStagingDirectory=local-staging \
-        -DskipRemoteStaging=true \
-        -DserverId=github \
-        -s settings.xml
+      run:  mvn deploy -Dmaven.resolver.transport=wagon -s settings.xml
+
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       working-directory: my-app
